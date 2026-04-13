@@ -1,3 +1,4 @@
+/* 1. GLOBAL RESETS */
 *,
 *::before,
 *::after {
@@ -15,32 +16,61 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   color: #333;
-  padding-top: 60px;
 }
+
+/* 2. GRID LAYOUT */
+.grid-container {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  min-height: 100vh;
+}
+
+/* 3. MAJOR AREAS (Assigning Names) */
 header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
   text-align: center;
-  padding: 60px 20px;
-  /* background: linear-gradient(135deg, #1e3a8a, #3b82f6); */
-  /* Professional Blue */
+  padding: 1rem 2rem;
   background: linear-gradient(135deg, #4a4a4a 0%, #2e7d32 50%, #fdd835 100%);
   color: white;
   border-bottom: 5px solid #60a5fa;
 }
 
+aside {
+  grid-area: aside;
+  border: 2px solid red;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* 4. SECTION-SPECIFIC STYLES (Header Content) */
 h1 {
   text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem; /* Adds a little space between title and links */
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
+  /* REMOVED position: fixed, top: 0, left: 0 */
   width: 100%;
   height: 60px;
   background-color: #333;
   border-bottom: 1px solid #444;
-  box-shadow: 0 0.4 1rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.4);
 }
 
 .nav-links {
@@ -49,8 +79,6 @@ nav {
   align-items: center;
   gap: 3rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
   height: 100%;
 }
 
@@ -60,11 +88,11 @@ nav a {
   font-weight: bold;
 }
 
-.nav_submenu {
-  display: none;
-}
-
 nav a:hover {
   color: #ccc;
   text-decoration: underline;
+}
+
+.nav_submenu {
+  display: none;
 }
