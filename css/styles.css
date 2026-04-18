@@ -18,16 +18,16 @@ body {
   color: #333;
 }
 
-/* 2. GRID LAYOUT */
+/* MOBILE DEFAULT LAYOUT */
 .grid-container {
   display: grid;
   align-items: stretch;
-  grid-template-columns: 250px 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "header header"
-    "aside main"
-    "footer footer";
+    "header"
+    "aside"
+    "main"
+    "footer";
   min-height: 100vh;
 }
 
@@ -106,4 +106,11 @@ nav a:hover {
 
 .nav_submenu {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
 }
