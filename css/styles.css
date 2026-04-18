@@ -117,4 +117,8 @@ nav a:hover {
       "aside  main"
       "footer footer";
   }
+
+  .nav-links {
+    gap: 3rem;
+  }
 }
