@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -61,8 +62,8 @@ main {
 footer {
   grid-area: footer;
   background-color: #000000;
-  color: white;
-  text-align: #cccccc;
+  color: #cccccc;
+  text-align: center;
   padding: 2rem;
   border-top: 1px solid #333;
   font-size: 1.4rem;
