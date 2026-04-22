@@ -126,5 +126,6 @@ nav a:hover {
 
   .nav-links {
     gap: 3rem;
+    padding: 0 2rem;
   }
 }
