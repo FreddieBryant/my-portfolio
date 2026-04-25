@@ -101,6 +101,7 @@ h1 {
   text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
   margin: 3rem 0 1rem;
   line-height: 1.1; /* Heading often stay tighter than body text 1.1 - 1.2 */
+  letter-spacing: -0.02em;
 }
 
 h2 {
@@ -108,6 +109,7 @@ h2 {
   font-weight: 700;
   margin: 3rem 0 1rem;
   line-height: 1.2;
+  letter-spacing: 0.05rem;
 }
 
 p {
@@ -137,6 +139,7 @@ nav a {
   color: #f4f4f4;
   text-decoration: none;
   font-weight: bold;
+  letter-spacing: 0.05rem;
 }
 
 nav a:hover {
