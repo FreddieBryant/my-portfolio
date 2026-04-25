@@ -89,7 +89,8 @@ footer {
   text-align: center;
   padding: 2rem;
   border-top: 1px solid #333;
-  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 /* 4. SECTION-SPECIFIC STYLES (Header Content) */
@@ -109,7 +110,7 @@ h2 {
   font-weight: 700;
   margin: 3rem 0 1rem;
   line-height: 1.2;
-  letter-spacing: 0.05rem;
+  letter-spacing: -0.01em;
 }
 
 p {
@@ -140,6 +141,8 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
