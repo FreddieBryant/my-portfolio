@@ -119,6 +119,21 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.bio-photo {
+  width: 150px; /* Set a specific size */
+  height: 150px; /* Keep width and height equal for a circle */
+  object-fit: cover; /* Ensures the photo doesn't look squished */
+  border-radius: 50%; /* The easy way to make a circle */
+  /* OR use clipping as learned: clip-path: circle(50%); */
+
+  filter: grayscale(80%); /* Adds that cool filter look you just studied */
+  transition: filter 0.3s ease; /* Makes the hover effect smooth */
+}
+
+.bio-photo:hover {
+  filter: grayscale(0%); /* Brings back the color when you hover over it */
+}
+
 nav {
   /* REMOVED position: fixed, top: 0, left: 0 */
   width: 100%;
