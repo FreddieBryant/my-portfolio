@@ -120,14 +120,20 @@ p {
 }
 
 .bio-photo {
-  width: 150px; /* Set a specific size */
-  height: 150px; /* Keep width and height equal for a circle */
-  object-fit: cover; /* Ensures the photo doesn't look squished */
-  border-radius: 50%; /* The easy way to make a circle */
-  /* OR use clipping as learned: clip-path: circle(50%); */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center 70%;
 
-  filter: grayscale(80%); /* Adds that cool filter look you just studied */
-  transition: filter 0.3s ease; /* Makes the hover effect smooth */
+  /* This 'zooms' the image contents without growing the 150px box */
+  /* Try 1.5 or 2.0 to zoom in even more */
+  scale: 1.3;
+
+  /* This keeps the circle shape at exactly 150px */
+  clip-path: circle(38%);
+
+  filter: grayscale(80%);
+  transition: all 0.3s ease;
 }
 
 .bio-photo:hover {
