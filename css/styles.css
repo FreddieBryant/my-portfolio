@@ -180,6 +180,19 @@ nav a:hover {
   text-decoration: underline;
 }
 
+nav i {
+  margin-right: 0.5rem;
+  color: #60a5fa; /* Optional: adds a splash of color to the icon alone */
+}
+
+/* Space for the chevron on the right */
+nav .fa-chevron-down {
+  margin-right: 0;
+  margin-left: 0.5rem;
+  font-size: 0.8em; /* Optional: makes it look more like a subtle UI element */
+  vertical-align: middle;
+}
+
 .nav_submenu {
   display: none;
 }
