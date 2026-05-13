@@ -232,22 +232,28 @@ nav .fa-chevron-down {
 }
 
 /* NEW: Modern styling for those inputs */
+/* Update your selectors to include textarea */
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
   padding: 1.2rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-family: inherit;
+  width: 100%; /* Ensures it fills the container width */
+  resize: vertical; /* Allows users to scale it up/down safely */
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-input:focus {
+/* Add textarea to the focus glow */
+input:focus,
+textarea:focus {
   outline: none;
   border-color: #60a5fa;
   box-shadow: 0 0 8px rgba(96, 165, 250, 0.4);
 }
 
-/* NEW: Button styling */
+/* NEW: Button styling */ /* NEW: Button styling */
 button[type="submit"] {
   background-color: #60a5fa;
   color: white;
@@ -257,10 +263,34 @@ button[type="submit"] {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
+  margin-top: 1rem; /* Keeps the button clean below the fields */
 }
 
 button[type="submit"]:hover {
   background-color: #2c3e50;
+}
+
+/* NEW: Hide success message by default */
+.success-message {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.success-message.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media screen and (min-width: 768px) {
