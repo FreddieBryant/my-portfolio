@@ -78,6 +78,41 @@
               </optgroup>
             </select>
           </div>
+          <!-- 1. Radio Buttons (Select One) -->
+          <div class="form-group">
+            <label>Project Type</label>
+            <div class="radio-group">
+              <input
+                type="radio"
+                id="type-freelance"
+                name="project_type"
+                value="freelance"
+                checked
+              />
+              <label for="type-freelance" class="inline-label">Freelance Contract</label>
+
+              <input type="radio" id="type-fulltime" name="project_type" value="fulltime" />
+              <label for="type-fulltime" class="inline-label">Full-Time Hire</label>
+            </div>
+          </div>
+
+          <!-- 2. Checkboxes (Select Multiple) -->
+          <div class="form-group">
+            <label>Services Needed</label>
+            <div class="checkbox-group">
+              <input type="checkbox" id="service-frontend" name="services" value="frontend" />
+              <label for="service-frontend" class="inline-label">Frontend (React)</label>
+
+              <input type="checkbox" id="service-backend" name="services" value="backend" />
+              <label for="service-backend" class="inline-label">Backend (Node/Mongo)</label>
+            </div>
+          </div>
+
+          <!-- 3. Range Slider (Dynamic Selector) -->
+          <div class="form-group">
+            <label for="timeline">Expected Timeline (Weeks)</label>
+            <input type="range" id="timeline" name="timeline" min="2" max="12" step="2" value="4" />
+          </div>
 
           <!-- FIXED: Message wrapped inside form-group container -->
           <div class="form-group">

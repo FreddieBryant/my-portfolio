@@ -231,6 +231,28 @@ nav .fa-chevron-down {
   width: 100%;
 }
 
+/* Keeps checkbox/radio labels on the same line as the input */
+.form-group .inline-label {
+  display: inline-block;
+  font-weight: 400; /* Softer weight than main section labels */
+  margin-left: 0.5rem;
+  margin-right: 1.5rem;
+  vertical-align: middle;
+}
+
+/* Stops radio/checkbox inputs from stretching to 100% width */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Basic styling to clean up the slider track */
+input[type="range"] {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
 /* NEW: Modern styling for those inputs */
 /* Update your selectors to include textarea */
 input[type="text"],
