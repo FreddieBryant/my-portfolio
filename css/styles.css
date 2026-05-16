@@ -240,6 +240,17 @@ nav .fa-chevron-down {
   vertical-align: middle;
 }
 
+fieldset.form-group {
+  border: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+fieldset legend {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
 /* Stops radio/checkbox inputs from stretching to 100% width */
 input[type="radio"],
 input[type="checkbox"] {
@@ -255,21 +266,25 @@ input[type="range"] {
 
 /* NEW: Modern styling for those inputs */
 /* Update your selectors to include textarea */
+/* 1. Add select to the modern input styling block */
 input[type="text"],
 input[type="email"],
-textarea {
+textarea,
+select {
   padding: 1.2rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-family: inherit;
   width: 100%; /* Ensures it fills the container width */
   resize: vertical; /* Allows users to scale it up/down safely */
+  background-color: white; /* Keeps dropdown background clean */
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Add textarea to the focus glow */
+/* 2. Add select:focus to the blue glow animation block */
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   outline: none;
   border-color: #60a5fa;
   box-shadow: 0 0 8px rgba(96, 165, 250, 0.4);

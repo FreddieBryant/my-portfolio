@@ -79,8 +79,8 @@
             </select>
           </div>
           <!-- 1. Radio Buttons (Select One) -->
-          <div class="form-group">
-            <label>Project Type</label>
+          <fieldset class="form-group">
+            <legend>Project Type</legend>
             <div class="radio-group">
               <input
                 type="radio"
@@ -94,11 +94,11 @@
               <input type="radio" id="type-fulltime" name="project_type" value="fulltime" />
               <label for="type-fulltime" class="inline-label">Full-Time Hire</label>
             </div>
-          </div>
+          </fieldset>
 
           <!-- 2. Checkboxes (Select Multiple) -->
-          <div class="form-group">
-            <label>Services Needed</label>
+          <fieldset class="form-group">
+            <legend>Services Needed</legend>
             <div class="checkbox-group">
               <input type="checkbox" id="service-frontend" name="services" value="frontend" />
               <label for="service-frontend" class="inline-label">Frontend (React)</label>
@@ -106,7 +106,7 @@
               <input type="checkbox" id="service-backend" name="services" value="backend" />
               <label for="service-backend" class="inline-label">Backend (Node/Mongo)</label>
             </div>
-          </div>
+          </fieldset>
 
           <!-- 3. Range Slider (Dynamic Selector) -->
           <div class="form-group">
