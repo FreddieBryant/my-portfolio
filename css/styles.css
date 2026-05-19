@@ -150,10 +150,11 @@ p {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  object-position: center 70%;
+
+  /* CHANGED: Centers the photo left-to-right (50%), and slides it down (from 70% to 50% or 40%) */
+  object-position: 20% 45%;
 
   /* This 'zooms' the image contents without growing the 150px box */
-  /* Try 1.5 or 2.0 to zoom in even more */
   scale: 1.3;
 
   /* This keeps the circle shape at exactly 150px */
@@ -163,6 +164,25 @@ p {
   transition: all 0.3s ease;
 }
 
+.bio-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+
+  /* CHANGED: Centers the photo left-to-right (50%), and slides it down (from 70% to 50% or 40%) */
+  object-position: 10% 45%;
+
+  /* This 'zooms' the image contents without growing the 150px box */
+  scale: 1.3;
+
+  /* This keeps the circle shape at exactly 150px */
+  clip-path: circle(38%);
+
+  filter: grayscale(80%);
+  transition: all 0.3s ease;
+}
+
+/* Ensure this exact block is right below your .bio-photo rule */
 .bio-photo:hover {
   filter: grayscale(0%); /* Brings back the color when you hover over it */
 }
