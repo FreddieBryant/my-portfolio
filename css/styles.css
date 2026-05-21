@@ -167,11 +167,10 @@ p {
 .bio-photo {
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  object-fit: contain;
 
   /* CHANGED: Centers the photo left-to-right (50%), and slides it down (from 70% to 50% or 40%) */
-  object-position: 10% 45%;
-
+  object-position: center center;
   /* This 'zooms' the image contents without growing the 150px box */
   scale: 1.3;
 
