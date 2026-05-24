@@ -133,6 +133,29 @@ h1 {
   letter-spacing: -0.02em;
 }
 
+.hero-role-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #60a5fa; /* Your signature blue creates an instant visual anchor */
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: -0.5rem; /* Pulls it tighter to your name for a clean, unified look */
+  margin-bottom: 1.5rem;
+}
+
+/* VALUE SUBTITLE: Subtle balancing rules for your complete background line */
+.hero-subtitle {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #e2e8f0; /* Off-white color ensures great text contrast over the dark gradient */
+  max-width: 650px;
+  margin: 0 auto 2.5rem auto; /* Centers horizontally and creates spacing above the nav bar */
+  padding: 0 2rem;
+  line-height: 1.6;
+  text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+
 h2 {
   font-size: 3rem;
   font-weight: 700;
@@ -349,4 +372,67 @@ button[type="submit"]:active {
     gap: 3rem;
     padding: 0 2rem;
   }
+}
+
+.bio-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.bio-profile {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
+}
+
+/* Scoped subtitle typography */
+.bio-tagline {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/* Subheadings sized specifically for the 250px sidebar column */
+.bio-details h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 2rem 0 0.8rem 0;
+}
+
+.bio-details p {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Icon-driven lists layout */
+.bio-skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bio-skills-list li {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+
+/* Match your signature blue font color for sidebar icons */
+.bio-skills-list i {
+  color: #60a5fa;
+  margin-right: 1rem;
+  margin-top: 0.3rem; /* Aligns icon baseline with the small text */
+  font-size: 1.4rem;
+  width: 1.6rem; /* Ensures alignment even if icon glyph widths vary */
+  text-align: center;
 }

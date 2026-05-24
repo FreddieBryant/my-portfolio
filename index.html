@@ -15,15 +15,24 @@
   <body class="grid-container">
     <header>
       <img src="images/logo.svg" alt="MERN Logo" class="logo" />
-      <!-- Update your h1 line to include these two classes -->
-      <h1 class="animate__animated animate__backInDown">MERN Stack Developer</h1>
+
+      <!-- 1. YOUR NAME IS NOW THE MAIN H1 HOOK -->
+      <h1 class="animate__animated animate__backInDown">Freddie</h1>
+
+      <!-- 2. YOUR TARGET ROLE IS NOW A STYLED SUB-HEADLINE -->
+      <p class="hero-role-title">MERN Stack Developer</p>
+
+      <!-- 3. THE COMPLETE VALUE STATEMENT WITH VETERAN STATUS -->
+      <p class="hero-subtitle">
+        Air Force Veteran and self-taught developer mastering modern web standards to build clean,
+        high-performance full-stack applications.
+      </p>
 
       <nav>
         <ul class="nav-links">
           <li>
             <a href="#"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a>
           </li>
-
           <li>
             <a href="#"><i class="fa-solid fa-user" aria-hidden="true"></i> About me</a>
           </li>
@@ -44,15 +53,37 @@
         </ul>
       </nav>
     </header>
-    <aside>
-      <h2>Bio</h2>
-      <img
-        src="images/new-bio-pic-150a.jpg"
-        srcset="images/new-bio-pic-150a.jpg 1x, images/new-bio-pic-300a.jpg 2x"
-        alt="My profile photo"
-        class="bio-photo"
-      />
-      <p>Self-taught developer</p>
+
+    <aside class="bio-sidebar">
+      <div class="bio-profile">
+        <img
+          src="images/new-bio-pic-150a.jpg"
+          srcset="images/new-bio-pic-150a.jpg 1x, images/new-bio-pic-300a.jpg 2x"
+          alt="My profile photo"
+          class="bio-photo"
+        />
+        <h2>About Me</h2>
+        <p class="bio-tagline">Air Force Veteran</p>
+      </div>
+
+      <div class="bio-details">
+        <h3>My Journey</h3>
+        <p>
+          After my service in the Air Force, I channeled my discipline into software engineering.
+        </p>
+        <p>
+          As a self-taught developer, I focus heavily on writing clean, accessible, and structured
+          code.
+        </p>
+
+        <h3>Core Skills</h3>
+        <ul class="bio-skills-list">
+          <li><i class="fa-solid fa-code" aria-hidden="true"></i> Semantic HTML5</li>
+          <li><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Responsive CSS Grid</li>
+          <li><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> JavaScript (ES6+)</li>
+          <li><i class="fa-solid fa-terminal" aria-hidden="true"></i> Git Workflow</li>
+        </ul>
+      </div>
     </aside>
 
     <main>
