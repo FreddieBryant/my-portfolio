@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freddie Bryant | Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/053ba03e61.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="grid-container">
+    <header>
+      <img src="images/logo.svg" alt="MERN Logo" class="logo" />
+      <h1 class="animate__animated animate__backInDown">Freddie Bryant</h1>
+      <p class="hero-role-title">MERN Stack Developer</p>
+      <p class="hero-subtitle">
+        Air Force Veteran and self-taught developer mastering modern web standards to build clean,
+        high-performance full-stack applications.
+      </p>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="#"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-user" aria-hidden="true"></i> About me</a>
+          </li>
+          <li>
+            <a href="#">Courses<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+            <ul class="nav_submenu">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact me</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside class="bio-sidebar">
+      <div class="bio-profile">
+        <img
+          src="images/new-bio-pic-150a.jpg"
+          srcset="images/new-bio-pic-150a.jpg 1x, images/new-bio-pic-300a.jpg 2x"
+          alt="My profile photo"
+          class="bio-photo"
+        />
+        <h2>About Me</h2>
+        <p class="bio-tagline">Air Force Veteran</p>
+      </div>
+      <div class="bio-details">
+        <h3>My Journey</h3>
+        <p>
+          After my service in the Air Force, I channeled my discipline into software engineering.
+        </p>
+        <p>
+          As a self-taught developer, I focus heavily on writing clean, accessible, and structured
+          code.
+        </p>
+        <h3>Core Skills</h3>
+        <ul class="bio-skills-list">
+          <li><i class="fa-solid fa-code" aria-hidden="true"></i> Semantic HTML5</li>
+          <li><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Responsive CSS Grid</li>
+          <li><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> JavaScript (ES6+)</li>
+          <li><i class="fa-solid fa-terminal" aria-hidden="true"></i> Git Workflow</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main>
+      <section id="tech-stack" class="main-section">
+        <h2>Technical Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fa-brands fa-html5 skill-icon" aria-hidden="true"></i>
+            <h4>HTML5</h4>
+            <p>Semantic structures, SEO baseline, and web accessibility standards.</p>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-css3-alt skill-icon" aria-hidden="true"></i>
+            <h4>CSS3 Layouts</h4>
+            <p>Custom mobile-first layouts using vanilla CSS Grid and Flexbox layouts.</p>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-js skill-icon" aria-hidden="true"></i>
+            <h4>JavaScript</h4>
+            <p>ES6+ core application logic, structural algorithms, and DOM handling.</p>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-git-alt skill-icon" aria-hidden="true"></i>
+            <h4>Git / GitHub</h4>
+            <p>Version control architecture, branch isolation, and production deployments.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="main-section">
+        <h2>Completed Work</h2>
+        <div class="projects-container">
+          <article class="project-card">
+            <h3>
+              <a href="projects/recipe-page-showcase/index.html" target="_blank">
+                Recipe Page Showcase
+              </a>
+            </h3>
+            <p>
+              Built during Ultimate HTML/CSS Part 1. High-fidelity pixel implementation featuring
+              clean semantic markup selections and manual asset sizing controls.
+              <strong>(Click title above to view)</strong>
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>
+              <a href="projects/responsive-blog-platform/index.html" target="_blank">
+                Responsive Blog Platform
+              </a>
+            </h3>
+            <p>
+              A mobile-first architectural exercise focused on multi-device viewports. Implements
+              semantic HTML5 layout containers, fluid CSS grid-area assignments, and precise
+              breakpoint optimizations. <strong>(Click title above to view)</strong>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="email@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="course-select">Interested Course</label>
+            <select id="course-select" name="interested_course">
+              <optgroup label="Front-end Courses">
+                <option value="html" selected>HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+              </optgroup>
+              <optgroup label="Back-end Courses">
+                <option value="node">Node.js</option>
+                <option value="express">Express</option>
+                <option value="mongodb">MongoDB</option>
+              </optgroup>
+            </select>
+          </div>
+          <fieldset class="form-group">
+            <legend>Project Type</legend>
+            <div class="radio-group">
+              <input
+                type="radio"
+                id="type-freelance"
+                name="project_type"
+                value="freelance"
+                checked
+              />
+              <label for="type-freelance" class="inline-label">Freelance Contract</label>
+              <input type="radio" id="type-fulltime" name="project_type" value="fulltime" />
+              <label for="type-fulltime" class="inline-label">Full-Time Hire</label>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend>Services Needed</legend>
+            <div class="checkbox-group">
+              <input type="checkbox" id="service-frontend" name="services" value="frontend" />
+              <label for="service-frontend" class="inline-label">Frontend (React)</label>
+              <input type="checkbox" id="service-backend" name="services" value="backend" />
+              <label for="service-backend" class="inline-label">Backend (Node/Mongo)</label>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label for="timeline">Expected Timeline (Weeks)</label>
+            <input type="range" id="timeline" name="timeline" min="2" max="12" step="2" value="4" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="10"
+              placeholder="Type your message here..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="form-status" class="success-message">
+          <i class="fa-solid fa-circle-check"></i> Message sent successfully!
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" aria-label="GitHub"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p>&copy; 2026 Freddie Bryant | Built with Passion</p>
+    </footer>
+  </body>
+</html>
