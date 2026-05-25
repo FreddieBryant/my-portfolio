@@ -75,6 +75,7 @@
     </aside>
 
     <main>
+      <!-- 1. TECHNICAL STACK GRID -->
       <section id="tech-stack" class="main-section">
         <h2>Technical Stack</h2>
         <div class="skills-grid">
@@ -108,48 +109,34 @@
           <!-- CARD 1: RECIPE PAGE SHOWCASE -->
           <article class="project-card">
             <h3>
-              <a
-                href="projects/recipe-page-showcase/recipe.html"
-                target="_blank"
-                style="color: inherit; text-decoration: none"
-              >
+              <a href="projects/recipe-page-showcase/index.html" target="_blank">
                 Recipe Page Showcase
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square"
-                  style="font-size: 0.6em; margin-left: 0.5rem; color: #60a5fa"
-                ></i>
               </a>
             </h3>
             <p>
               Built during Ultimate HTML/CSS Part 1. High-fidelity pixel implementation featuring
               clean semantic markup selections and manual asset sizing controls.
+              <strong>(Click title above to view)</strong>
             </p>
           </article>
 
           <!-- CARD 2: RESPONSIVE BLOG PLATFORM -->
           <article class="project-card">
             <h3>
-              <a
-                href="projects/responsiive-blog-platform/index.html"
-                target="_blank"
-                style="color: inherit; text-decoration: none"
-              >
+              <a href="projects/responsive-blog-platform/index.html" target="_blank">
                 Responsive Blog Platform
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square"
-                  style="font-size: 0.6em; margin-left: 0.5rem; color: #60a5fa"
-                ></i>
               </a>
             </h3>
             <p>
               A mobile-first architectural exercise focused on multi-device viewports. Implements
               semantic HTML5 layout containers, fluid CSS grid-area assignments, and precise
-              breakpoint optimizations.
+              breakpoint optimizations. <strong>(Click title above to view)</strong>
             </p>
           </article>
         </div>
       </section>
 
+      <!-- 3. CONTACT FORM -->
       <section id="contact">
         <h2>Contact Me</h2>
         <form id="contact-form" action="https://formspree.io" method="POST">
@@ -161,6 +148,7 @@
             <label for="email">Email</label>
             <input id="email" name="email" type="email" placeholder="email@example.com" required />
           </div>
+
           <div class="form-group">
             <label for="course-select">Interested Course</label>
             <select id="course-select" name="interested_course">
@@ -176,6 +164,7 @@
               </optgroup>
             </select>
           </div>
+
           <fieldset class="form-group">
             <legend>Project Type</legend>
             <div class="radio-group">
@@ -187,23 +176,28 @@
                 checked
               />
               <label for="type-freelance" class="inline-label">Freelance Contract</label>
+
               <input type="radio" id="type-fulltime" name="project_type" value="fulltime" />
               <label for="type-fulltime" class="inline-label">Full-Time Hire</label>
             </div>
           </fieldset>
+
           <fieldset class="form-group">
             <legend>Services Needed</legend>
             <div class="checkbox-group">
               <input type="checkbox" id="service-frontend" name="services" value="frontend" />
               <label for="service-frontend" class="inline-label">Frontend (React)</label>
+
               <input type="checkbox" id="service-backend" name="services" value="backend" />
               <label for="service-backend" class="inline-label">Backend (Node/Mongo)</label>
             </div>
           </fieldset>
+
           <div class="form-group">
             <label for="timeline">Expected Timeline (Weeks)</label>
             <input type="range" id="timeline" name="timeline" min="2" max="12" step="2" value="4" />
           </div>
+
           <div class="form-group">
             <label for="message">Message</label>
             <textarea
@@ -214,6 +208,7 @@
               required
             ></textarea>
           </div>
+
           <button type="submit">Send Message</button>
         </form>
         <div id="form-status" class="success-message">

@@ -436,3 +436,33 @@ button[type="submit"]:active {
   width: 1.6rem; /* Ensures alignment even if icon glyph widths vary */
   text-align: center;
 }
+
+/* Makes it obvious that project titles are clickable links */
+/* 1. Sets the normal baseline appearance of the link inside the card */
+/* ==========================================================================
+   PROJECT CARDS HYPERLINKS & HOVERS
+   ========================================================================== */
+
+/* 1. Sets the default look of the link text */
+.project-card h3 a {
+  color: #2c3e50; /* Matches your dark heading theme */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* 2. Swaps text color smoothly on hover state */
+.project-card h3 a:hover {
+  color: #60a5fa; /* Glows your signature blue */
+  text-decoration: underline;
+}
+
+/* 3. Styles your arrow icon cleanly by targeting its raw FontAwesome classes */
+/* Styles your arrow icon cleanly and restores FontAwesome font rendering */
+.project-card h3 a .fa-up-right-from-square {
+  font-family: "Font Awesome 6 Free" !important; /* Overrides the parent Inter font rule */
+  font-weight: 900 !important; /* Required by FontAwesome to display solid weight icons */
+  font-size: 0.6em;
+  margin-left: 0.5rem;
+  color: #60a5fa;
+  display: inline-block;
+}
