@@ -75,7 +75,6 @@
     </aside>
 
     <main>
-      <!-- 1. TECHNICAL STACK GRID -->
       <section id="tech-stack" class="main-section">
         <h2>Technical Stack</h2>
         <div class="skills-grid">
@@ -102,11 +101,9 @@
         </div>
       </section>
 
-      <!-- 2. COMPLETED PROJECTS SHOWCASE -->
       <section id="projects" class="main-section">
         <h2>Completed Work</h2>
         <div class="projects-container">
-          <!-- CARD 1: RECIPE PAGE SHOWCASE -->
           <article class="project-card">
             <h3>
               <a href="projects/recipe-page-showcase/index.html" target="_blank">
@@ -119,8 +116,6 @@
               <strong>(Click title above to view)</strong>
             </p>
           </article>
-
-          <!-- CARD 2: RESPONSIVE BLOG PLATFORM -->
           <article class="project-card">
             <h3>
               <a href="projects/responsive-blog-platform/index.html" target="_blank">
@@ -136,7 +131,6 @@
         </div>
       </section>
 
-      <!-- 3. CONTACT FORM -->
       <section id="contact">
         <h2>Contact Me</h2>
         <form id="contact-form" action="https://formspree.io" method="POST">
@@ -148,7 +142,6 @@
             <label for="email">Email</label>
             <input id="email" name="email" type="email" placeholder="email@example.com" required />
           </div>
-
           <div class="form-group">
             <label for="course-select">Interested Course</label>
             <select id="course-select" name="interested_course">
@@ -164,7 +157,6 @@
               </optgroup>
             </select>
           </div>
-
           <fieldset class="form-group">
             <legend>Project Type</legend>
             <div class="radio-group">
@@ -176,28 +168,23 @@
                 checked
               />
               <label for="type-freelance" class="inline-label">Freelance Contract</label>
-
               <input type="radio" id="type-fulltime" name="project_type" value="fulltime" />
               <label for="type-fulltime" class="inline-label">Full-Time Hire</label>
             </div>
           </fieldset>
-
           <fieldset class="form-group">
             <legend>Services Needed</legend>
             <div class="checkbox-group">
               <input type="checkbox" id="service-frontend" name="services" value="frontend" />
               <label for="service-frontend" class="inline-label">Frontend (React)</label>
-
               <input type="checkbox" id="service-backend" name="services" value="backend" />
               <label for="service-backend" class="inline-label">Backend (Node/Mongo)</label>
             </div>
           </fieldset>
-
           <div class="form-group">
             <label for="timeline">Expected Timeline (Weeks)</label>
             <input type="range" id="timeline" name="timeline" min="2" max="12" step="2" value="4" />
           </div>
-
           <div class="form-group">
             <label for="message">Message</label>
             <textarea
@@ -208,7 +195,6 @@
               required
             ></textarea>
           </div>
-
           <button type="submit">Send Message</button>
         </form>
         <div id="form-status" class="success-message">
