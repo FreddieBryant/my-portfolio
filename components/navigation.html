@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Component Test</title>
+    <!-- Relative paths to look backward out of the component folder -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- FontAwesome Kit for my nav icons -->
+    <!-- Kit Embedding Script or FontAwesome Kit -->
+    <script src="https://kit.fontawesome.com/053ba03e61.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-links">
+        <li>
+          <a href="#"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-user" aria-hidden="true"></i> About me</a>
+        </li>
+        <li>
+          <a href="#">Courses<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="nav_submenu">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact me</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

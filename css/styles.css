@@ -226,6 +226,11 @@ nav {
   height: 100%;
 }
 
+/*  (>)(Child selector) Target the only li items directly inside .nav-links   */
+.nav-links > li {
+  position: relative;
+}
+
 nav a {
   color: var(--color-text-light);
   text-decoration: none;
@@ -255,6 +260,22 @@ nav .fa-chevron-down {
 
 .nav_submenu {
   display: none;
+}
+
+/* Step 3: Reveal state: Trigger visibility when hovering over parent item */
+.nav-links li:hover .nav_submenu {
+  display: block;
+  position: absolute; /* Floats the menu outside the normal layout grid */
+  top: 100%; /* Sits the dropdown directly below the main text link */
+  left: 50%; /* Starts the dropdown box origin from the horizontal middle */
+  transform: translateX(-50%); /* Shifts box back left by half its width to perfectly center it */
+  background-color: var(--color-primary-dark);
+  padding: 1.5rem 2rem;
+  border-radius: 4px;
+  list-style: none;
+  min-width: 150px; /* Guarantees wide text links won't crunch onto two lines */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 105; /* Guarantees it floats over banners without hiding underneath */
 }
 
 .form-group {
