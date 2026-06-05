@@ -209,7 +209,7 @@ p {
   filter: grayscale(0%); /* Brings back the color when you hover over it */
 }
 
-nav {
+.nav {
   width: 100%;
   padding: 1rem 0;
   background-color: transparent;
@@ -217,7 +217,7 @@ nav {
   box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.4);
 }
 
-.nav-links {
+.nav__links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,12 +226,11 @@ nav {
   height: 100%;
 }
 
-/*  (>)(Child selector) Target the only li items directly inside .nav-links   */
-.nav-links > li {
+.nav__item {
   position: relative;
 }
 
-nav a {
+.nav__link {
   color: var(--color-text-light);
   text-decoration: none;
   font-weight: bold;
@@ -240,61 +239,61 @@ nav a {
   font-size: 1.2rem;
 }
 
-nav a:hover {
+.nav__link:hover {
   color: var(--color-accent);
   text-decoration: underline;
 }
 
-nav i {
+.nav__icon {
   margin-right: 0.5rem;
   color: var(--color-accent);
 }
 
-/* Space for the chevron on the right */
-nav .fa-chevron-down {
+.nav__chevron {
   margin-right: 0;
   margin-left: 0.5rem;
   font-size: 0.8em;
   vertical-align: middle;
 }
 
-.nav_submenu {
+/* Dropdown Submenu Sub-Component */
+.nav__submenu {
   display: none;
 }
 
-/* Step 3: Reveal state: Trigger visibility when hovering over parent item */
-.nav-links li:hover .nav_submenu {
+.nav__item:hover .nav__submenu {
   display: block;
-  position: absolute; /* Floats the menu outside the normal layout grid */
-  top: 100%; /* Sits the dropdown directly below the main text link */
-  left: 50%; /* Starts the dropdown box origin from the horizontal middle */
-  transform: translateX(-50%); /* Shifts box back left by half its width to perfectly center it */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: var(--color-primary-dark);
   padding: 1.5rem 2rem;
   border-radius: 4px;
   list-style: none;
-  min-width: 150px; /* Guarantees wide text links won't crunch onto two lines */
+  min-width: 150px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  z-index: 105; /* Guarantees it floats over banners without hiding underneath */
+  z-index: 105;
 }
 
-.form-group {
+/* ==========================================================================
+   FORM COMPONENT (BEM)
+   ========================================================================== */
+.form__group {
   margin-bottom: 1.5rem;
 }
 
-.form-group label {
+.form__label {
   display: block;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-/* Base input width */
-.form-group input {
+.form__input {
   width: 100%;
 }
 
-/* Keeps checkbox/radio labels on the same line as the input */
-.form-group .inline-label {
+.form__inline-label {
   display: inline-block;
   font-weight: 400;
   margin-left: 0.5rem;
@@ -302,34 +301,31 @@ nav .fa-chevron-down {
   vertical-align: middle;
 }
 
-fieldset.form-group {
+.form__fieldset {
   border: none;
   padding: 0;
   margin: 0 0 1.5rem 0;
 }
 
-fieldset legend {
+.form__legend {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-/* Stops radio/checkbox inputs from stretching to 100% width */
-input[type="radio"],
-input[type="checkbox"] {
+.form__radio,
+.form__checkbox {
   width: auto;
   vertical-align: middle;
 }
 
-/* Basic styling to clean up the slider track */
-input[type="range"] {
+.form__slider {
   width: 100%;
   margin-top: 0.5rem;
 }
 
-input[type="text"],
-input[type="email"],
-textarea,
-select {
+.form__input,
+.form__textarea,
+.form__select {
   padding: 1.2rem;
   border: 1px solid var(--color-border-light);
   border-radius: 4px;
@@ -340,16 +336,15 @@ select {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
+.form__input:focus,
+.form__textarea:focus,
+.form__select:focus {
   outline: none;
   border-color: var(--color-accent);
   box-shadow: 0 0 8px rgba(96, 165, 250, 0.4);
 }
 
-/* Button styling */
-button[type="submit"] {
+.form__btn {
   background-color: var(--color-accent);
   color: var(--color-text-light);
   padding: 1.2rem 2.4rem;
@@ -361,19 +356,18 @@ button[type="submit"] {
   transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-button[type="submit"]:hover {
+.form__btn:hover {
   background-color: var(--color-primary);
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(96, 165, 250, 0.3);
 }
 
-button[type="submit"]:active {
+.form__btn:active {
   transform: translateY(0);
   box-shadow: none;
 }
 
-/* Hide success message by default */
-.success-message {
+.form__success-message {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -390,7 +384,7 @@ button[type="submit"]:active {
   pointer-events: none;
 }
 
-.success-message.show {
+.form__success-message.show {
   opacity: 1;
   transform: translateY(0);
 }
@@ -409,7 +403,7 @@ button[type="submit"]:active {
       "footer footer";
   }
 
-  .nav-links {
+  .nav__links {
     gap: 3rem;
     padding: 0 2rem;
   }
