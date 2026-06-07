@@ -186,6 +186,7 @@
           <fieldset class="form__group form__fieldset">
             <legend class="form__legend">Project Type</legend>
             <div class="form__radio-group">
+              <!-- Added explicit matching id/for connections -->
               <input
                 class="form__radio"
                 type="radio"
@@ -195,6 +196,7 @@
                 checked
               />
               <label for="type-freelance" class="form__inline-label">Freelance Contract</label>
+
               <input
                 class="form__radio"
                 type="radio"
@@ -205,9 +207,11 @@
               <label for="type-fulltime" class="form__inline-label">Full-Time Hire</label>
             </div>
           </fieldset>
+
           <fieldset class="form__group form__fieldset">
             <legend class="form__legend">Services Needed</legend>
             <div class="form__checkbox-group">
+              <!-- Added explicit matching id/for connections -->
               <input
                 class="form__checkbox"
                 type="checkbox"
@@ -216,6 +220,7 @@
                 value="frontend"
               />
               <label for="service-frontend" class="form__inline-label">Frontend (React)</label>
+
               <input
                 class="form__checkbox"
                 type="checkbox"
@@ -226,6 +231,7 @@
               <label for="service-backend" class="form__inline-label">Backend (Node/Mongo)</label>
             </div>
           </fieldset>
+
           <div class="form__group">
             <label class="form__label" for="timeline">Expected Timeline (Weeks)</label>
             <input
